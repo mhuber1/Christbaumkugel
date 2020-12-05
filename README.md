@@ -12,3 +12,5 @@
  and last but not least to assemble this christmas ball slide the slots in the pcbs into each other and solder the square pads together.
  
  A proper BOM and images will come as soon as i have the pcbs at home and assembled.
+
+just for the Giveaway: jlcpcb.com
