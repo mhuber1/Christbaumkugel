@@ -1,0 +1,838 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED DA0
+U 1 1 5FA3F528
+P 5000 3000
+F 0 "DA0" V 5039 2883 50  0000 R CNN
+F 1 "LED" V 4948 2883 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 5000 3000 50  0001 C CNN
+F 3 "~" H 5000 3000 50  0001 C CNN
+	1    5000 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5FA3FB2E
+P 7350 3350
+F 0 "BT1" H 7468 3446 50  0000 L CNN
+F 1 "Battery_Cell" H 7468 3355 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_3002_1x2032" V 7350 3410 50  0001 C CNN
+F 3 "~" V 7350 3410 50  0001 C CNN
+	1    7350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED DB0
+U 1 1 5FA40982
+P 6000 3000
+F 0 "DB0" V 6039 2883 50  0000 R CNN
+F 1 "LED" V 5948 2883 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 6000 3000 50  0001 C CNN
+F 3 "~" H 6000 3000 50  0001 C CNN
+	1    6000 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FA418A8
+P 6000 3500
+F 0 "R4" H 6070 3546 50  0000 L CNN
+F 1 "R" H 6070 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5930 3500 50  0001 C CNN
+F 3 "~" H 6000 3500 50  0001 C CNN
+	1    6000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FA41F47
+P 5000 3500
+F 0 "R1" H 5070 3546 50  0000 L CNN
+F 1 "R" H 5070 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4930 3500 50  0001 C CNN
+F 3 "~" H 5000 3500 50  0001 C CNN
+	1    5000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FA42272
+P 5400 3000
+F 0 "R2" H 5470 3046 50  0000 L CNN
+F 1 "100k" H 5470 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5330 3000 50  0001 C CNN
+F 3 "~" H 5400 3000 50  0001 C CNN
+	1    5400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FA42AD5
+P 5600 3000
+F 0 "R3" H 5670 3046 50  0000 L CNN
+F 1 "100k" H 5670 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5530 3000 50  0001 C CNN
+F 3 "~" H 5600 3000 50  0001 C CNN
+	1    5600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BD139 Q3
+U 1 1 5FA43450
+P 5900 4000
+F 0 "Q3" H 6092 4046 50  0000 L CNN
+F 1 "BD139" H 6092 3955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 6100 3925 50  0001 L CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001225.pdf" H 5900 4000 50  0001 L CNN
+	1    5900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BD139 Q2
+U 1 1 5FA444ED
+P 5100 4000
+F 0 "Q2" H 5291 4046 50  0000 L CNN
+F 1 "BD139" H 5291 3955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 5300 3925 50  0001 L CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001225.pdf" H 5100 4000 50  0001 L CNN
+	1    5100 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3800 5000 3750
+Wire Wire Line
+	5050 3750 5000 3750
+Connection ~ 5000 3750
+Wire Wire Line
+	5000 3750 5000 3650
+Wire Wire Line
+	5000 3350 5000 3250
+Wire Wire Line
+	5000 2850 5000 2650
+Wire Wire Line
+	6000 2850 6000 2650
+Wire Wire Line
+	5000 2650 5400 2650
+Wire Wire Line
+	6000 3150 6000 3250
+Wire Wire Line
+	6000 3650 6000 3750
+Wire Wire Line
+	5950 3750 6000 3750
+Connection ~ 6000 3750
+Wire Wire Line
+	6000 3750 6000 3800
+Wire Wire Line
+	5600 3150 5600 3750
+Wire Wire Line
+	5600 3750 5650 3750
+Wire Wire Line
+	5350 3750 5400 3750
+Wire Wire Line
+	5400 3750 5400 3150
+Wire Wire Line
+	5400 2850 5400 2650
+Connection ~ 5400 2650
+Wire Wire Line
+	5400 2650 5600 2650
+Wire Wire Line
+	5600 2850 5600 2650
+Connection ~ 5600 2650
+Wire Wire Line
+	5600 2650 6000 2650
+$Comp
+L Transistor_BJT:BC846 Q4
+U 1 1 5FA499A9
+P 6400 4500
+F 0 "Q4" H 6591 4546 50  0000 L CNN
+F 1 "BC846" H 6591 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6600 4425 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 6400 4500 50  0001 L CNN
+	1    6400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC846 Q1
+U 1 1 5FA4E5A2
+P 4600 4500
+F 0 "Q1" H 4791 4546 50  0000 L CNN
+F 1 "BC846" H 4791 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 4425 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 4600 4500 50  0001 L CNN
+	1    4600 4500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4300 4500 3750
+Wire Wire Line
+	4500 3750 5000 3750
+Wire Wire Line
+	5600 3750 5500 3750
+Wire Wire Line
+	5500 3750 5500 4000
+Wire Wire Line
+	5500 4000 5300 4000
+Connection ~ 5600 3750
+Wire Wire Line
+	4800 4500 5500 4500
+Wire Wire Line
+	5500 4500 5500 4000
+Connection ~ 5500 4000
+Wire Wire Line
+	5400 3750 5400 3900
+Wire Wire Line
+	5400 3900 5650 3900
+Wire Wire Line
+	5650 3900 5650 4000
+Wire Wire Line
+	5650 4500 6200 4500
+Connection ~ 5400 3750
+Wire Wire Line
+	5700 4000 5650 4000
+Connection ~ 5650 4000
+Wire Wire Line
+	5650 4000 5650 4500
+Wire Wire Line
+	6500 4300 6500 3750
+Wire Wire Line
+	6500 3750 6000 3750
+Wire Wire Line
+	6000 4200 6000 4800
+Wire Wire Line
+	6000 4800 6500 4800
+Wire Wire Line
+	6500 4800 6500 4700
+Wire Wire Line
+	5000 4800 4500 4800
+Wire Wire Line
+	4500 4800 4500 4700
+Wire Wire Line
+	5000 4200 5000 4800
+Wire Wire Line
+	5000 4800 6000 4800
+Connection ~ 5000 4800
+Connection ~ 6000 4800
+Wire Wire Line
+	6500 4800 7350 4800
+Wire Wire Line
+	7350 4800 7350 3450
+Connection ~ 6500 4800
+Wire Wire Line
+	7350 3150 7350 2650
+Wire Wire Line
+	7350 2650 6000 2650
+Connection ~ 6000 2650
+$Comp
+L Device:CP C1
+U 1 1 5FA57478
+P 5200 3750
+F 0 "C1" V 4945 3750 50  0000 C CNN
+F 1 "10µ" V 5036 3750 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder" H 5238 3600 50  0001 C CNN
+F 3 "~" H 5200 3750 50  0001 C CNN
+	1    5200 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5FA580F3
+P 5800 3750
+F 0 "C2" V 5545 3750 50  0000 C CNN
+F 1 "10µ" V 5636 3750 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder" H 5838 3600 50  0001 C CNN
+F 3 "~" H 5800 3750 50  0001 C CNN
+	1    5800 3750
+	0    -1   1    0   
+$EndComp
+Text GLabel 4900 3250 0    50   Input ~ 0
+LED_A
+Text GLabel 6100 3250 2    50   Input ~ 0
+LED_B
+Wire Wire Line
+	6100 3250 6000 3250
+Connection ~ 6000 3250
+Wire Wire Line
+	6000 3250 6000 3350
+Wire Wire Line
+	4900 3250 5000 3250
+Connection ~ 5000 3250
+Wire Wire Line
+	5000 3250 5000 3150
+$Comp
+L Device:LED DB1
+U 1 1 5FA5BBCC
+P 5000 1500
+F 0 "DB1" H 5150 1450 50  0000 R CNN
+F 1 "LED" H 5200 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 5000 1500 50  0001 C CNN
+F 3 "~" H 5000 1500 50  0001 C CNN
+	1    5000 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DB2
+U 1 1 5FA5CA75
+P 5200 1500
+F 0 "DB2" H 5350 1450 50  0000 R CNN
+F 1 "LED" H 5400 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 5200 1500 50  0001 C CNN
+F 3 "~" H 5200 1500 50  0001 C CNN
+	1    5200 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DB3
+U 1 1 5FA5CE67
+P 5400 1500
+F 0 "DB3" H 5550 1450 50  0000 R CNN
+F 1 "LED" H 5600 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 5400 1500 50  0001 C CNN
+F 3 "~" H 5400 1500 50  0001 C CNN
+	1    5400 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DB4
+U 1 1 5FA5D0E4
+P 5600 1500
+F 0 "DB4" H 5750 1450 50  0000 R CNN
+F 1 "LED" H 5800 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 5600 1500 50  0001 C CNN
+F 3 "~" H 5600 1500 50  0001 C CNN
+	1    5600 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DB5
+U 1 1 5FA5D3B0
+P 5800 1500
+F 0 "DB5" H 5950 1450 50  0000 R CNN
+F 1 "LED" H 6000 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 5800 1500 50  0001 C CNN
+F 3 "~" H 5800 1500 50  0001 C CNN
+	1    5800 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DB10
+U 1 1 5FA5D780
+P 6000 1500
+F 0 "DB10" H 6150 1450 50  0000 R CNN
+F 1 "LED" H 6200 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 6000 1500 50  0001 C CNN
+F 3 "~" H 6000 1500 50  0001 C CNN
+	1    6000 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DB11
+U 1 1 5FA5DAEF
+P 6200 1500
+F 0 "DB11" H 6350 1450 50  0000 R CNN
+F 1 "LED" H 6400 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 6200 1500 50  0001 C CNN
+F 3 "~" H 6200 1500 50  0001 C CNN
+	1    6200 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DB12
+U 1 1 5FA5DDFA
+P 6400 1500
+F 0 "DB12" H 6550 1450 50  0000 R CNN
+F 1 "LED" H 6600 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 6400 1500 50  0001 C CNN
+F 3 "~" H 6400 1500 50  0001 C CNN
+	1    6400 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DB13
+U 1 1 5FA5E039
+P 6600 1500
+F 0 "DB13" H 6750 1450 50  0000 R CNN
+F 1 "LED" H 6800 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 6600 1500 50  0001 C CNN
+F 3 "~" H 6600 1500 50  0001 C CNN
+	1    6600 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DB14
+U 1 1 5FA5E2DC
+P 6800 1500
+F 0 "DB14" H 6950 1450 50  0000 R CNN
+F 1 "LED" H 7000 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 6800 1500 50  0001 C CNN
+F 3 "~" H 6800 1500 50  0001 C CNN
+	1    6800 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DB15
+U 1 1 5FA5E6F5
+P 7000 1500
+F 0 "DB15" H 7150 1450 50  0000 R CNN
+F 1 "LED" H 7200 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 7000 1500 50  0001 C CNN
+F 3 "~" H 7000 1500 50  0001 C CNN
+	1    7000 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA1
+U 1 1 5FA67D2E
+P 4500 1500
+F 0 "DA1" H 4650 1450 50  0000 R CNN
+F 1 "LED" H 4700 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 4500 1500 50  0001 C CNN
+F 3 "~" H 4500 1500 50  0001 C CNN
+	1    4500 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA2
+U 1 1 5FA68E0F
+P 4300 1500
+F 0 "DA2" H 4450 1450 50  0000 R CNN
+F 1 "LED" H 4500 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 4300 1500 50  0001 C CNN
+F 3 "~" H 4300 1500 50  0001 C CNN
+	1    4300 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA3
+U 1 1 5FA6919F
+P 4100 1500
+F 0 "DA3" H 4250 1450 50  0000 R CNN
+F 1 "LED" H 4300 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 4100 1500 50  0001 C CNN
+F 3 "~" H 4100 1500 50  0001 C CNN
+	1    4100 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA4
+U 1 1 5FA69474
+P 3900 1500
+F 0 "DA4" H 4050 1450 50  0000 R CNN
+F 1 "LED" H 4100 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 3900 1500 50  0001 C CNN
+F 3 "~" H 3900 1500 50  0001 C CNN
+	1    3900 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA5
+U 1 1 5FA696F3
+P 3700 1500
+F 0 "DA5" H 3850 1450 50  0000 R CNN
+F 1 "LED" H 3900 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 3700 1500 50  0001 C CNN
+F 3 "~" H 3700 1500 50  0001 C CNN
+	1    3700 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA10
+U 1 1 5FA69A50
+P 3500 1500
+F 0 "DA10" H 3650 1450 50  0000 R CNN
+F 1 "LED" H 3700 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 3500 1500 50  0001 C CNN
+F 3 "~" H 3500 1500 50  0001 C CNN
+	1    3500 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA11
+U 1 1 5FA69D08
+P 3300 1500
+F 0 "DA11" H 3450 1450 50  0000 R CNN
+F 1 "LED" H 3500 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 3300 1500 50  0001 C CNN
+F 3 "~" H 3300 1500 50  0001 C CNN
+	1    3300 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA12
+U 1 1 5FA69F07
+P 3100 1500
+F 0 "DA12" H 3250 1450 50  0000 R CNN
+F 1 "LED" H 3300 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 3100 1500 50  0001 C CNN
+F 3 "~" H 3100 1500 50  0001 C CNN
+	1    3100 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA13
+U 1 1 5FA6A2E1
+P 2900 1500
+F 0 "DA13" H 3050 1450 50  0000 R CNN
+F 1 "LED" H 3100 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 2900 1500 50  0001 C CNN
+F 3 "~" H 2900 1500 50  0001 C CNN
+	1    2900 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA14
+U 1 1 5FA6A6A8
+P 2700 1500
+F 0 "DA14" H 2850 1450 50  0000 R CNN
+F 1 "LED" H 2900 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 2700 1500 50  0001 C CNN
+F 3 "~" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED DA15
+U 1 1 5FA6AA48
+P 2500 1500
+F 0 "DA15" H 2650 1450 50  0000 R CNN
+F 1 "LED" H 2700 1550 50  0000 R CNN
+F 2 "TerminalBlock_DIY:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 2500 1500 50  0001 C CNN
+F 3 "~" H 2500 1500 50  0001 C CNN
+	1    2500 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 1350 5000 1150
+Wire Wire Line
+	5000 1150 5200 1150
+Wire Wire Line
+	7000 1150 7000 1350
+Wire Wire Line
+	4500 1350 4500 1150
+Wire Wire Line
+	2500 1150 2500 1350
+Wire Wire Line
+	2700 1350 2700 1150
+Connection ~ 2700 1150
+Wire Wire Line
+	2700 1150 2500 1150
+Wire Wire Line
+	4500 1150 4300 1150
+Wire Wire Line
+	2900 1350 2900 1150
+Connection ~ 2900 1150
+Wire Wire Line
+	2900 1150 2700 1150
+Wire Wire Line
+	3100 1350 3100 1150
+Connection ~ 3100 1150
+Wire Wire Line
+	3100 1150 2900 1150
+Wire Wire Line
+	3300 1350 3300 1150
+Connection ~ 3300 1150
+Wire Wire Line
+	3300 1150 3100 1150
+Wire Wire Line
+	3500 1350 3500 1150
+Wire Wire Line
+	3500 1150 3300 1150
+Wire Wire Line
+	3700 1350 3700 1150
+Wire Wire Line
+	3900 1350 3900 1150
+Connection ~ 3900 1150
+Wire Wire Line
+	3900 1150 3700 1150
+Wire Wire Line
+	4100 1350 4100 1150
+Connection ~ 4100 1150
+Wire Wire Line
+	4100 1150 3900 1150
+Wire Wire Line
+	4300 1350 4300 1150
+Connection ~ 4300 1150
+Wire Wire Line
+	4300 1150 4100 1150
+Wire Wire Line
+	5200 1350 5200 1150
+Connection ~ 5200 1150
+Wire Wire Line
+	5200 1150 5400 1150
+Wire Wire Line
+	5400 1350 5400 1150
+Connection ~ 5400 1150
+Wire Wire Line
+	5400 1150 5600 1150
+Wire Wire Line
+	5600 1350 5600 1150
+Connection ~ 5600 1150
+Wire Wire Line
+	5600 1150 5800 1150
+Wire Wire Line
+	5800 1350 5800 1150
+Wire Wire Line
+	6000 1350 6000 1150
+Connection ~ 6000 1150
+Wire Wire Line
+	6000 1150 6200 1150
+Wire Wire Line
+	6200 1350 6200 1150
+Connection ~ 6200 1150
+Wire Wire Line
+	6200 1150 6400 1150
+Wire Wire Line
+	6400 1350 6400 1150
+Connection ~ 6400 1150
+Wire Wire Line
+	6400 1150 6600 1150
+Wire Wire Line
+	6600 1350 6600 1150
+Connection ~ 6600 1150
+Wire Wire Line
+	6600 1150 6800 1150
+Wire Wire Line
+	6800 1350 6800 1150
+Connection ~ 6800 1150
+Wire Wire Line
+	6800 1150 7000 1150
+Text GLabel 5000 1800 3    50   Input ~ 0
+LED_B
+Text GLabel 4500 1800 3    50   Input ~ 0
+LED_A
+Wire Wire Line
+	5000 1800 5000 1750
+Wire Wire Line
+	5800 1650 5800 1750
+Wire Wire Line
+	5800 1750 5600 1750
+Connection ~ 5000 1750
+Wire Wire Line
+	5000 1750 5000 1650
+Wire Wire Line
+	3700 1650 3700 1750
+Wire Wire Line
+	3700 1750 3900 1750
+Wire Wire Line
+	4500 1750 4500 1800
+Wire Wire Line
+	4500 1650 4500 1750
+Connection ~ 4500 1750
+Wire Wire Line
+	4300 1650 4300 1750
+Connection ~ 4300 1750
+Wire Wire Line
+	4300 1750 4500 1750
+Wire Wire Line
+	4100 1650 4100 1750
+Connection ~ 4100 1750
+Wire Wire Line
+	4100 1750 4300 1750
+Wire Wire Line
+	3900 1650 3900 1750
+Connection ~ 3900 1750
+Wire Wire Line
+	3900 1750 4100 1750
+Wire Wire Line
+	5600 1650 5600 1750
+Connection ~ 5600 1750
+Wire Wire Line
+	5600 1750 5400 1750
+Wire Wire Line
+	5400 1650 5400 1750
+Connection ~ 5400 1750
+Wire Wire Line
+	5400 1750 5200 1750
+Wire Wire Line
+	5200 1650 5200 1750
+Connection ~ 5200 1750
+Wire Wire Line
+	5200 1750 5000 1750
+$Comp
+L Mylib:Pad X1.1
+U 1 1 5FAADF1B
+P 5800 2100
+F 0 "X1.1" V 5800 2000 50  0000 L CNN
+F 1 "Pad" H 5600 2000 50  0000 L CNN
+F 2 "TerminalBlock_DIY:Pad_7.6x3" H 5800 2100 50  0001 C CNN
+F 3 "" H 5800 2100 50  0001 C CNN
+	1    5800 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 1800 5800 1750
+Connection ~ 5800 1750
+$Comp
+L Mylib:Pad X3.2
+U 1 1 5FAB4999
+P 3500 2100
+F 0 "X3.2" H 3250 2000 50  0000 L CNN
+F 1 "Pad" V 3500 2000 50  0000 L CNN
+F 2 "TerminalBlock_DIY:Pad_7.6x3" H 3500 2100 50  0001 C CNN
+F 3 "" H 3500 2100 50  0001 C CNN
+	1    3500 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Mylib:Pad X3.1
+U 1 1 5FAB52AD
+P 3700 2100
+F 0 "X3.1" H 3450 2200 50  0000 L CNN
+F 1 "Pad" V 3700 2100 50  0000 L CNN
+F 2 "TerminalBlock_DIY:Pad_7.6x3" H 3700 2100 50  0001 C CNN
+F 3 "" H 3700 2100 50  0001 C CNN
+	1    3700 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Mylib:Pad X1.2
+U 1 1 5FAB54EF
+P 6000 2100
+F 0 "X1.2" V 6000 2050 50  0000 L CNN
+F 1 "Pad" H 5800 2200 50  0000 L CNN
+F 2 "TerminalBlock_DIY:Pad_7.6x3" H 6000 2100 50  0001 C CNN
+F 3 "" H 6000 2100 50  0001 C CNN
+	1    6000 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Mylib:Pad X2.2
+U 1 1 5FAB5982
+P 5000 700
+F 0 "X2.2" V 4859 642 50  0000 R CNN
+F 1 "Pad" V 4768 642 50  0000 R CNN
+F 2 "TerminalBlock_DIY:Pad_7.6x3" H 5000 700 50  0001 C CNN
+F 3 "" H 5000 700 50  0001 C CNN
+	1    5000 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mylib:Pad X2.1
+U 1 1 5FAB6A93
+P 6000 700
+F 0 "X2.1" V 5859 642 50  0000 R CNN
+F 1 "Pad" V 5768 642 50  0000 R CNN
+F 2 "TerminalBlock_DIY:Pad_7.6x3" H 6000 700 50  0001 C CNN
+F 3 "" H 6000 700 50  0001 C CNN
+	1    6000 700 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 1000 6000 1150
+Wire Wire Line
+	5000 1000 5000 1150
+Connection ~ 5000 1150
+Wire Wire Line
+	6000 1800 6000 1750
+Wire Wire Line
+	7000 1650 7000 1750
+Wire Wire Line
+	7000 1750 6800 1750
+Connection ~ 6000 1750
+Wire Wire Line
+	6000 1750 6000 1650
+Wire Wire Line
+	6200 1650 6200 1750
+Connection ~ 6200 1750
+Wire Wire Line
+	6200 1750 6000 1750
+Wire Wire Line
+	6400 1650 6400 1750
+Connection ~ 6400 1750
+Wire Wire Line
+	6400 1750 6200 1750
+Wire Wire Line
+	6600 1650 6600 1750
+Connection ~ 6600 1750
+Wire Wire Line
+	6600 1750 6400 1750
+Wire Wire Line
+	6800 1650 6800 1750
+Connection ~ 6800 1750
+Wire Wire Line
+	6800 1750 6600 1750
+Wire Wire Line
+	3700 1800 3700 1750
+Connection ~ 3700 1750
+Wire Wire Line
+	3500 1800 3500 1750
+Wire Wire Line
+	2500 1650 2500 1750
+Connection ~ 3500 1750
+Wire Wire Line
+	3500 1750 3500 1650
+Wire Wire Line
+	3300 1650 3300 1750
+Connection ~ 3300 1750
+Wire Wire Line
+	3300 1750 3500 1750
+Wire Wire Line
+	3100 1650 3100 1750
+Wire Wire Line
+	2500 1750 2700 1750
+Connection ~ 3100 1750
+Wire Wire Line
+	3100 1750 3300 1750
+Wire Wire Line
+	2900 1650 2900 1750
+Connection ~ 2900 1750
+Wire Wire Line
+	2900 1750 3100 1750
+Wire Wire Line
+	2700 1650 2700 1750
+Connection ~ 2700 1750
+Wire Wire Line
+	2700 1750 2900 1750
+Wire Wire Line
+	5000 1150 4500 1150
+Connection ~ 4500 1150
+Wire Wire Line
+	7000 1150 7000 650 
+Wire Wire Line
+	7000 650  3500 650 
+Wire Wire Line
+	3500 650  3500 1150
+Connection ~ 7000 1150
+Connection ~ 3500 1150
+$Comp
+L power:+BATT #PWR0101
+U 1 1 5FB098B8
+P 7350 2500
+F 0 "#PWR0101" H 7350 2350 50  0001 C CNN
+F 1 "+BATT" H 7365 2673 50  0000 C CNN
+F 2 "" H 7350 2500 50  0001 C CNN
+F 3 "" H 7350 2500 50  0001 C CNN
+	1    7350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2500 7350 2650
+Connection ~ 7350 2650
+$Comp
+L power:+BATT #PWR0102
+U 1 1 5FB0FB4B
+P 5800 1000
+F 0 "#PWR0102" H 5800 850 50  0001 C CNN
+F 1 "+BATT" H 5815 1173 50  0000 C CNN
+F 2 "" H 5800 1000 50  0001 C CNN
+F 3 "" H 5800 1000 50  0001 C CNN
+	1    5800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1000 5800 1150
+Connection ~ 5800 1150
+$EndSCHEMATC
