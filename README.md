@@ -1,6 +1,8 @@
 # Christbaumkugeln_2020
  repo for Pcbways, JLCPCBs and NextPCBs Christmas givaway
  
+ these PCBs schould be assembled and then hanged onto achristmas tree with U or Omega schaped piece of wire soldered into the holes on top of the right PCB
+ 
  for the transistors use either BC94x or BD139 not both at the same time
  C1 and C2 are supposed to be 10µF tantalum Capacitors
  R2 and R3 are 100k𝛀 resistors in a 1206 package
