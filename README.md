@@ -15,4 +15,4 @@
  
  A proper BOM and images will come as soon as i have the pcbs at home and assembled.
 
-just for the Giveaway: jlcpcb.com
+just for the Giveaway: https://jlcpcb.com
